@@ -1,0 +1,16 @@
+Homework 6 LC3 
+Due: Tuesday 06/23/2015
+
+What to submit?
+- Online submission (select project #6 in submission page)
+- Provide .asm file for each question
+- Provide meaningful detailed comments
+
+All programs starts from x3000. They are named as q08.asm, q09.asm q10.asm
+
+*(8) Write an LC-3 assembly program to remove duplicate values starts from x3050. Those consecutive values will end with a value of xffff. Store the answer from x3070. Use q08.hex to test.
+
+**(9) Write an LC-3 assembly program to sort (ascending order) non-negative values starts from x3050. Those consecutive values will end with a value of xffff. The sort must be performed in place. That is, you cannot use any additional memory for the sort operation beyond a few registers and a couple
+of extra memory locations.  Use q10.hex to test.
+
+*(10) Write an LC-3 assembly program to test if a string is a palindrome. A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward. The answer is 1 if the input string is a palindrome, -1 otherwise. Use INPUT .STRINGZ for the test string.

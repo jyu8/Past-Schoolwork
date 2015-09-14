@@ -1,0 +1,24 @@
+	.ORIG x3000
+
+	LD R0, ANS
+	LEA R1, A	;BaseR
+			;ADD R0, R1	;2
+	
+	LDR R2, R1, #0
+	ADD R0, R0, R2
+	LDR R2, R1, #1
+	ADD R0, R0, R2
+	LDR R2, R1, #2
+	ADD R0, R0, R2
+	LDR R2, R1, #3
+	ADD R0, R0, R2
+	ST R0, ANS
+	HALT
+
+A	.FILL 2
+	.FILL 3
+	.FILL 5
+	.FILL 7
+
+ANS	.FILL 0
+	.END

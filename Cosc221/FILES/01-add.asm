@@ -1,0 +1,13 @@
+	.ORIG x3000
+
+	LD R0, D
+	LD R1, E
+	ADD R1, R0, R1
+	ST R1, F
+	HALT
+
+D	.FILL x0009
+E	.FILL x0006
+F	.BLKW 1
+
+	.END

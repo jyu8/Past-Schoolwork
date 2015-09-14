@@ -1,0 +1,23 @@
+	.ORIG x3000
+
+	LD R0, D
+	LD R1, E
+	AND R1, R0, R1
+	BRz AA
+	
+	LD R0, C
+	ST R0, F
+	BRnzp BB
+
+AA	LD R0, B
+	ST R0, F
+
+BB	HALT
+
+B	.FILL x0001
+C	.FILL xffff
+D	.FILL x0020
+E	.FILL x8000
+F	.BLKW 1	
+
+	.END

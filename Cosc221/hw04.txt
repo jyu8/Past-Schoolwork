@@ -1,0 +1,62 @@
+
+Homework 04
+
+Due Beginning of the class of Tuesday 6/9/2015
+Online submission. Use a single .m file for each exercise then put all files into a zip file.
+
+TinyCPU Programming -- graded by correctness 
+
+
+Use TinyCPU12 to achieve the following
+
+(1) Compute multiplication by << and +
+
+1b 010 A
+1c 00b B
+1d 
+1e 
+1f ans
+
+The above exmple will yield 176
+
+(2) Compute the absolute value of A
+
+01c 800 (flag)
+01d 001 (1)
+01e ff6 (A)
+01f 000 (ans)
+
+The above example will yield |-10| = 10
+
+(3) Compute A % B (reminder) while A>1, B>1
+
+Data 
+29 050 A
+2a 00b B
+2b -B
+2c 800 flag
+2d 1
+2e -1
+2f Ans
+
+The above exmple will yield 80 % 11 = 3
+
+(4) count number of 0
+1) count number of 1
+2) 12 - ans
+
+3f 0 ans
+
+
+(5) Compute nth Fibbacci number that is F(n)=F(n-1)+F(n-2)
+1 1 2 3 5 8 13 21 34 55 89
+1b 00a n
+1c fff (-1)
+1d fn-2
+1e fn-1
+1f fn
+
+The above example will yield 89.
+
+(6) Modify factorial program to make it faster
+

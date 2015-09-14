@@ -1,0 +1,38 @@
+
+Homework 03
+
+Due Beginning of the class of Thursday 5/28/2015
+Online submission. Use a single file for each exercise then put all files into a zip file.
+
+Logisim -- graded by correctness 
+
+(1) A BCD to 7 segment code convertor (page 260)
+	Input: 1 4-bit binary (for BCD input)
+	Ouput: 1 7-segment display
+	Description: page 258-260
+	Note: use gates only, apply sub circuit
+
+(2) A 4 bit binary to BCD converter
+	Input: 4 bit binary 
+	Output: 1 hex digit display
+	Description: displays 0-9 (valid for a BCD number) and 'E' when the value is not valid
+	Note: do not use combinational logic
+
+(3) A 2 bit BCD adder
+	Input: 4 4-bit binary (for 2 2-digit BCD inputs)
+	Output: 7 hex digit displays - 4 for input; 2 for output value; 1 for output carry
+	Description: you may assume that all input are valid
+	Note: must use the 1-bit BCD adder as component
+ 
+(4) A counter of bit of 1
+	Input: one 8-bit binary
+	Output: 1 hex digit display
+	Description: display the number of 1s in the input
+	Note: do not use combinational logic
+
+(5) An ALU
+	Input: two 8-bit binary and one 3-bit selector
+	Output:  one 8-bit binary
+	Description: ALU in 4.8 Table 4.4 on page 304
+	Note: do not use combinational logic
+

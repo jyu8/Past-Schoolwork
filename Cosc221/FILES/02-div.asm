@@ -1,0 +1,33 @@
+	.ORIG x3000
+	
+	LD R1, B
+	NOT R2, R1
+	ADD R2, R2, #1	;R2 <- -B
+
+BB	LD R0, A
+	ADD R0, R0, R2
+	ST R0, A
+	BRz DD
+
+	LD R0, A
+	LD R1, FLAG
+	AND R1, R0, R1
+	BRz CC
+	BR EE
+
+CC	LD R0, ANS
+	ADD R0, R0 #1
+	ST R0, ANS
+	BR BB
+
+DD	LD R0, ANS
+	ADD R0, R0, #1
+	ST R0, ANS
+EE	HALT
+
+A	.FILL x0050
+B	.FILL x000b
+FLAG	.FILL x8000
+ANS	.BLKW 1
+
+	.END

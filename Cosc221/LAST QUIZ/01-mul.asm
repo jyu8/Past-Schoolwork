@@ -1,0 +1,31 @@
+	.ORIG x3000
+
+AA	LD R0, C
+	LD R1, E
+	AND R1, R0, R1
+	BRz BB
+
+	LD R0, D
+	LD R1, F
+	ADD R1, R0, R1
+	ST R1, F
+
+BB	LD R0, D
+	ADD R0, R0, R0
+	ST R0, D
+
+	LD R0, E
+	ADD R0, R0, R0
+	ST R0, E
+	BRz CC
+
+	BR AA
+
+CC	HALT
+
+C	.FILL x000a
+D	.FILL x0010
+E	.FILL x0001
+F	.FILL x0000
+
+	.END

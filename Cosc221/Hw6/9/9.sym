@@ -1,0 +1,13 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	AA                      3001
+//	COMPARE                 3016
+//	END                     3020
+//	LIST                    3024
+//	MAIN1                   300A
+//	MAIN2                   300F
+//	MAINSUB                 3007
+//	MASK                    3022
+//	N                       3021
+//	SIXTEEN                 3023
+//	SWITCH                  301D

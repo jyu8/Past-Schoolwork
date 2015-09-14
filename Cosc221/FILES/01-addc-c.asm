@@ -1,0 +1,21 @@
+	.ORIG x3000
+
+	LD R0, ANS
+	;LEA R1, A	;BaseR
+	LD R1, ADDR	
+
+AA	LDR R2, R1, #0
+	ADD R3, R2, #1
+	BRz BB
+
+	ADD R0, R0, R2
+	ST R0, ANS
+	ADD R1, R1, #1
+	BR AA
+
+BB	HALT
+
+ANS	.FILL 0
+ADDR	.FILL x300c
+
+	.END
